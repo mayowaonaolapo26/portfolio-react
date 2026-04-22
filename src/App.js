@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Services from './Services';
 import Contact from './Contact';
+import Github from './Github';
 
 function Nav() {
   return (
@@ -11,6 +12,7 @@ function Nav() {
         <Link to="/" style={{color: '#aaaaaa', textDecoration: 'none'}}>Home</Link>
         <Link to="/services" style={{color: '#aaaaaa', textDecoration: 'none'}}>Services</Link>
         <Link to="/contact" style={{color: '#aaaaaa', textDecoration: 'none'}}>Contact</Link>
+        <Link to="/github" style={{color: '#aaaaaa', textDecoration: 'none'}}>GitHub</Link>
       </div>
     </nav>
   );
@@ -25,6 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/github" element={<Github />} />
         </Routes>
       </div>
     </BrowserRouter>
